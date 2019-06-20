@@ -7,6 +7,7 @@
 from simulator import *
 import codecs
 import nltk
+import sys
 # nltk.download()
 # import engine.sim.lexicon_gen.lexicon_generator as lg
 
@@ -30,11 +31,13 @@ class data_manager():
             res = eval(file.read().encode('utf8', 'replace'))
         return list(filter(lambda x: len(x) > min_len, res))
 
-def simulate(debug = False, file_name = '../data/train.csv'):
+def simulate(debug = False):
     """
     debug (bool): True to print sentences to file, False to save it to db
     debug_file (str): the file name to save the debug output
     """
+    file_name = sys.argv[1]
+    print (file_name)
     dm = data_manager(config['root'])
     keywords = dm.read_lexicon_set(config['key'], min_len = 3)
     locations = dm.read_lexicon_set(config['locations'], min_len = 3)
