@@ -17,6 +17,12 @@
     researchers who're experted at deep learning | expert
     what's the top conference about databases? | venue
     
+### Prepare Data:
+  - We generate training data using mannually defined templates.
+  - Command:
+  ```cd templates```
+  ```python3 scholar_simulator.py ./data/train.csv```
+  
 ### Train:
   - Command: ```python train.py ./data/train.csv```
 
