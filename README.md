@@ -18,10 +18,10 @@
     what's the top conference about databases? | venue
     
 ### Train:
-  - Command: ```python train.py ./data/train.csv ./training_config.json```
+  - Command: ```python train.py ./data/train.csv```
 
 ### Predict:
-  - Command: ```python3 util.py```
+  - Command: ```python3 predict.py```
   
 ### Reference:
  - [Implement a cnn for text classification in tensorflow](http://www.wildml.com/2015/12/implementing-a-cnn-for-text-classification-in-tensorflow/)
