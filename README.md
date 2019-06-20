@@ -1,11 +1,10 @@
 ### Project:  Classify Query Intention
 
 ### Highlights:
-  - This is a **multi-class text classification (sentence classification)** problem.
-  - The goal of this project is to **classify user's query into 4 intent categories**.
+  - The goal of this project is to **classify user's query into four categories of intention**.
   - This model was built with **CNN, RNN (LSTM and GRU) and Word Embeddings** on **Tensorflow**.
 
-### Tasks:
+### Task:
   - To identify the searching intention according to the query sentence typed by users in academic search engine.
   - The intention has four main categories: **topic**, **paper**, **expert** and **venue**.
   
