@@ -1,26 +1,24 @@
-### Project: Classify Query Intention
+### Project:  Classify Query Intention
 
 ### Highlights:
   - This is a **multi-class text classification (sentence classification)** problem.
-  - The goal of this project is to **classify Kaggle San Francisco Crime Description into 39 classes**.
+  - The goal of this project is to **classify user's query into 4 intent categories**.
   - This model was built with **CNN, RNN (LSTM and GRU) and Word Embeddings** on **Tensorflow**.
 
-### Data: [Kaggle San Francisco Crime](https://www.kaggle.com/c/sf-crime/data)
+### Data:
   - Input: **Query**
   - Output: **Category**
   - Examples:
 
-    Descript   | Category
+    Query   | Category
     -----------|-----------
-    GRAND THEFT FROM LOCKED AUTO|LARCENY/THEFT
-    POSSESSION OF NARCOTICS PARAPHERNALIA|DRUG/NARCOTIC
-    AIDED CASE, MENTAL DISTURBED|NON-CRIMINAL
-    AGGRAVATED ASSAULT WITH BODILY FORCE|ASSAULT
-    ATTEMPTED ROBBERY ON THE STREET WITH A GUN|ROBBERY
+    what's the most popular research area in data mining? | topic
+    the papers about RL published in AAAI | paper
+    researchers who're experted at deep learning | expert
+    what's the top conference about databases? | venue
     
 ### Train:
-  - Command: ```python train.py ./data/train.csv ./training_config.json
-  ```
+  - Command: ```python train.py ./data/train.csv ./training_config.json```
 
 ### Predict:
   - Command: ```python3 util.py```
