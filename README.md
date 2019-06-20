@@ -5,6 +5,10 @@
   - The goal of this project is to **classify user's query into 4 intent categories**.
   - This model was built with **CNN, RNN (LSTM and GRU) and Word Embeddings** on **Tensorflow**.
 
+### Tasks:
+  - To identify the searching intention according to the query sentence typed by users in academic search engine.
+  - The intention has four main categories: **topic**, **paper**, **expert** and **venue**.
+  
 ### Data:
   - Input: **Query**
   - Output: **Category**
